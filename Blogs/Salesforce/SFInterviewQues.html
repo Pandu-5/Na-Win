@@ -1,0 +1,2215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="Na Win Tech LLc, IT services, consultant, Technology, App Development, IT testing, Blogs, Na Win Tech Blogs, Salesforce, Salesforce Blogs">
+    <meta name="description" content="Na Win Tech LLc">
+    <meta name="author" content="">
+
+    <title>Salesforce Interview Questions</title>
+
+    <!-- CSS FILES -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="../../css/styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/interview.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <!-- <img src="../../images/NA-WIN-TECH-LOGO.png" class="logo img-fluid" alt="Na Win Tech LLc"> -->
+                <span>
+                    NA WIN
+                    <small>Tech LLC</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../../index.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../../services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href="../../blogs.html"
+                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Blogs</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../Data Science/DSInterviewQues.html">Data Science</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="./SFInterviewQues.html">Salesforce</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="../../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="news-detail-header-section text-center">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <h1 class="text-white">Salesforce Interview Questions</h1>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-12">
+                        <div class="news-block">
+                            <div class="news-block-top">
+                                <img src="../../images/SalesImg/Introduction-to-Salesforce.jpg"
+                                    class="news-image img-fluid" alt="">
+
+                                <div class="news-category-block">
+                                    <a href="#" class="category-block-link">
+                                        Salesforce,
+                                    </a>
+
+                                    <a href="#" class="category-block-link">
+                                        Salesforce Interview Questions
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="news-block-info">
+                                <div class="d-flex mt-2">
+                                    <div class="news-block-date">
+                                        <p>
+                                            <i class="bi-calendar4 custom-icon me-1"></i>
+                                            Feb 27, 2023
+                                        </p>
+                                    </div>
+
+                                    <div class="news-block-author mx-5">
+                                        <p>
+                                            <i class="bi-person custom-icon me-1"></i>
+                                            By Admin
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="news-block-title mb-2">
+                                    <h4>Interview Questions</h4>
+                                </div>
+
+                                <div class="news-block-body">
+                                    <p>Following are the Salesforce interview questions that are divided into Basic,
+                                        Intermediate and Advanced levels.</p>
+
+                                    <div class="tab">
+                                        <button class="tablinks" onclick="openCity(event, 'SFDC')">SFDC
+                                            Configuration</button>
+                                        <button class="tablinks" onclick="openCity(event, 'Apex')">Apex</button>
+                                        <button class="tablinks"
+                                            onclick="openCity(event, 'Visualforce')">Visualforce</button>
+                                        <button class="tablinks"
+                                            onclick="openCity(event, 'Scenarios')">Scenarios</button>
+                                    </div>
+
+                                    <!-- SFDC -->
+                                    <div id="SFDC" class="tabcontent">
+                                        <button class="collapsible"><strong>Production and Sandbox
+                                                Environments</strong></button>
+                                        <div class="content">
+                                            <p>We should not modify the live application directly so we work in
+                                                different environment for the changes of the existing application.</p>
+                                        </div>
+                                        <button class="collapsible">1. What is Cloud Computing ?</button>
+                                        <div class="content">
+                                            <p>* Pictorial representation of internet is Cloud.</p>
+                                            <p>* Cloud Computing is nothing but internet computing.</p>
+                                            <p>*With this approach everything can be done in internet (Using
+                                                Application, Developing Application and distributing the hardware), no
+                                                need of any minimum hardware requirements and no need to install any
+                                                software in local system.</p>
+                                            <p>*Cloud Computing is an approach to provide the following services</p>
+                                            <p> -> SAAS (Software As A Service)</p>
+                                            <p> -> PAAS (Platform As A Service)</p>
+                                            <p> -> IAAS (Infrastructure As A Service)</p>
+                                        </div>
+                                        <button class="collapsible">2. What is Salesforce?</button>
+                                        <div class="content">
+                                            <p>1. Salesforce is a company which provides a web based tool called
+                                                Salesforce
+                                            </p>
+                                            <p>2. Salesforce by following the Cloud Computing approach, providing SAAS
+                                                and
+                                                PAAS</p>
+                                            <p>3. SAAS: Providing Sales, Marketing and Call Center applications as a
+                                                service</p>
+                                            <p>4. PAAS: Providing Force.com platform in which we can develop Apex
+                                                (Programming language similar to Core Java) and Visualforce (Mark up
+                                                language similar to HTML) logic.</p>
+                                        </div>
+                                        <button class="collapsible">3. What is Production?</button>
+                                        <div class="content">
+                                            <p>We should not make coding changes in production since end-users are using
+                                                the application from production environment.</p>
+                                        </div>
+                                        <button class="collapsible">4. What is production url?</button>
+                                        <div class="content">
+                                            <p>login.salesforce.com</p>
+                                        </div>
+                                        <button class="collapsible">5. What is sandbox?</button>
+                                        <div class="content">
+                                            <p>* Pictorial representation of internet is Cloud.</p>
+                                            <p>* Cloud Computing is nothing but internet computing.</p>
+                                        </div>
+                                        <button class="collapsible">6. What is sandbox url?</button>
+                                        <div class="content">
+                                            <p>test.salesforce.com</p>
+                                        </div>
+                                        <button class="collapsible">7. What are the types of Sandboxes?</button>
+                                        <div class="content">
+                                            <p>Developer Sandbox</p>
+                                            <p>Developer pro sandbox</p>
+                                            <p>Partial data sandbox</p>
+                                            <p>Full copy sandbox</p>
+                                        </div>
+                                        <button class="collapsible">8. What is Developer sandbox?</button>
+                                        <div class="content">
+                                            <p>* It copy only configuration changes from the production</p>
+                                            <p>* It won’t copy real time data</p>
+                                            <p>* We can test the configuration changes with sample data</p>
+                                            <p>* Sample data limit is 200mb</p>
+                                            <p>* Refresh time interval is one day</p>
+                                            <p>* If we refresh all the sandbox contents will be replaced with production
+                                                contents</p>
+                                        </div>
+                                        <button class="collapsible">9. What is developer pro sandbox?</button>
+                                        <div class="content">
+                                            <p>* Copy configuration changes</p>
+                                            <p>* No real time data</p>
+                                            <p>* Sample data limit is 1GB</p>
+                                            <p>* Refresh time interval one day</p>
+                                        </div>
+                                        <button class="collapsible">10. What is partial data sandbox?</button>
+                                        <div class="content">
+                                            <p>* Copy configuration changes</p>
+                                            <p>* Copy certain amount of real time data</p>
+                                            <p>* Real time data limit is 5GB</p>
+                                            <p>* For each table it can copy maximum of 10k records</p>
+                                            <p>* Refresh interval 5 days</p>
+                                        </div>
+                                        <button class="collapsible">11. What is Full copy sandbox?</button>
+                                        <div class="content">
+                                            <p>* It is exact replica of the production</p>
+                                            <p>* Copy both configuration and entire real time data from the production
+                                            </p>
+                                            <p>* Refresh time interval 29 days</p>
+                                        </div>
+
+                                        <button class="collapsible"><strong>Configuration</strong></button>
+                                        <div class="content">
+                                            <p>Using point and click approach, we can configure the functionalities.</p>
+                                        </div>
+                                        <button class="collapsible">1. What is Track Field History?</button>
+                                        <div class="content">
+                                            <p>* While creating the object, we can enable 'Track Field History'.</p>
+                                            <p>* If, we enable 'Track Field History' user can see 'Set History Tracking'
+                                                button under 'Custom Fields & Relationships' section which is available
+                                                on the object detail page.</p>
+                                            <p>* By clicking on 'Set History Tracking' button, we can enable tracking
+                                                for the fields which ever we want.</p>
+                                            <p>* To see the object history, go to object's record layout and add Object
+                                                Name History related list to the layout.</p>
+                                            <p>* Whenever, user changes field value from one value to another value, it
+                                                will show the history of the field in 'Object History' related list.</p>
+                                        </div>
+                                        <button class="collapsible">2. What are the Activities in Salesforce?</button>
+                                        <div class="content">
+                                            <p>To create the Activities, while creating the object, we should check for
+                                                'Allow Activities' check box then user can add open Activities and
+                                                Activity History related lists on the Object layout.</p>
+                                            <p> There are two types of activities -</p>
+
+                                            <p>3. Task: Task is nothing but work assigned to a particular person, it
+                                                doesn't have certain time limit.</p>
+                                            <p>2. Event: It has certain time limit in that time only all persons should
+                                                assemble after the time limit over, event will get complete.</p>
+                                            <p>- Once event or task status changed to 'Completed' then we can see those
+                                                records under Activity History Related List.</p>
+                                        </div>
+                                        <button class="collapsible">3. How to Rename the tab?</button>
+                                        <div class="content">
+                                            <p>Tab name will be decided based on the Plural Label of the custom object,
+                                                to rename go to corresponding object detail page and rename the plural
+                                                label.</p>
+                                        </div>
+                                        <button class="collapsible">4. How to display multiple columns after clicking on
+                                            the tab?</button>
+                                        <div class="content">
+                                            <p>Click on the tab(Which should be realted to any of the custom/standard
+                                                object) > Expand Force.com Quick Access Menu > Edit Columns > Move the
+                                                needed fields from Available Fields to Selected Fields. > Click on Save
+                                                > User should be able to see multiple columns.</p>
+                                            <p>(OR)</p>
+                                            <p>Click on Setup > Create > Objects > Select the corresponding object link
+                                                > Under Search Layouts section > Click Edit which should be left to
+                                                Object Tab > Move the needed fields from Available Fields to Selected
+                                                Fields. > Click on Save > User should be able to see multiple columns.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">5. What is the difference between ISBLANK() AND
+                                            ISNULL()?</button>
+                                        <div class="content">
+                                            <p>* ISNULL() works only for number data type fieds, if we don't populate
+                                                with value for number fields it will return true.</p>
+                                            <p>* ISNULL() won't support TEXT data type fields because text fields never
+                                                become null.</p>
+                                            <p>* ISBLANK() supports both number as well as text data types.</p>
+                                        </div>
+                                        <button class="collapsible">6. What is dependent picklist?</button>
+                                        <div class="content">
+                                            <p>In some scenario's, we should be able to control one of the
+                                                field(Dependent field) from another field(Controlling field), example If
+                                                we select Country(Controlling field) as US then City(Dependent Field)
+                                                should display only US cities.</p>
+
+                                            <p>* We can use checkbox data type fields also while creating dependent
+                                                picklist (Note: Checkbox should be always controlling field)</p>
+                                            <p>* We can use multi-select data type fields also while creating dependent
+                                                picklist (Note: multi-select data type field should be always dependent
+                                                field)</p>
+                                        </div>
+                                        <button class="collapsible">7. What is the architecture of the
+                                            salesforce</button>
+                                        <div class="content">
+                                            <p>MVC Architecutre - Model, View , Controller</p>
+                                            <p> View - It is the user interface (Apps, Tabs, Page Layouts, Fields and
+                                                Record Types)</p>
+                                            <p> Controller - Business Logic (Save, Edit, New, Cancel and Delete - upon
+                                                click on these button salesforce execute some logic from controller)</p>
+                                            <p> Model - It is the Database, which stores Schema (Meta-Data(Data about
+                                                Data) -> Apps, Tabs, sObjects, fields, Apex Classes, Visualforce pages,
+                                                etc...) and Instance (Records)</p>
+                                        </div>
+                                        <button class="collapsible">8. What is the difference between 15 digit and 18
+                                            digit id in Salesforce?</button>
+                                        <div class="content">
+                                            <p>* In Salesforce, whenever user create any component (Object, field, tab
+                                                etc...) or record then salesforce will generate an unique id with which
+                                                user can identify the record or component.</p>
+                                            <p>* After creating the record, in the URL user can see the id of the record
+                                                which is of 15 digits length.</p>
+                                            <p>* Through user interface user always see 15 digit id which is
+                                                Cases-Sensitive.</p>
+
+                                            <p>* If the user query the existing records from the database through API
+                                                (Either from Query Tool or from a program), it will always return 18
+                                                digit id which is Case-Insensitive.</p>
+                                            <p>* Last 3 digits of the 18 digit represents checksum of the capitalization
+                                                of 15 digit id.</p>
+                                            <p>* Based on the first 3 digits user can identify the object of the record.
+                                            </p>
+                                            <p>* All the records belongs to same object will contain same firt 3 digits.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">9. What is Record Type?</button>
+                                        <div class="content">
+                                            <p>* For an object based on the Record Type, we can show different fields
+                                                and
+                                                different picklist values by assigning different page layouts for the
+                                                record types and profiles.</p>
+                                            <p>* After creating the record type, on the record type detail page user can
+                                                see all the picklist data type fields, user can edit the picklist and
+                                                decide which values should display for this particular record type.</p>
+                                        </div>
+                                        <button class="collapsible">10. What is the difference between detail page and
+                                            edit page?</button>
+                                        <div class="content">
+                                            <p>* Whenever user try to create a new record or edit an existing record
+                                                user can input the values for the fields, this page is nothing but edit
+                                                page.</p>
+                                            <p>* After creating a new record or editing an existing record, user can see
+                                                the information of the record, this page is nothing but detail page.</p>
+                                        </div>
+                                        <button class="collapsible">11. What is out of box functionality?</button>
+                                        <div class="content">
+                                            <p>Within the sfdc standered functionality (no need to code).</p>
+                                        </div>
+                                        <button class="collapsible">12. What are the type of tabs?</button>
+                                        <div class="content">
+                                            <p>* Custom tabs (create for objects)</p>
+                                            <p>* Web tabs (create to display a website)</p>
+                                            <p>* Visual force tabs (create to display the visual force page)</p>
+                                        </div>
+                                        <button class="collapsible">13. What is validation rule?</button>
+                                        <div class="content">
+                                            <p>While creating or modifying the record based on the certain conditions we
+                                                can display error messages on top of the page or below to the filed.</p>
+                                        </div>
+                                        <button class="collapsible">14. There are two fields, if the user populate two
+                                            field values if we combine those values uniqueness should be maintained, how
+                                            to achieve this without coding?</button>
+                                        <div class="content">
+                                            <p>Create a unique text field and update the field from workflow rule (use
+                                                formula to update by combining two field values), after the update again
+                                                all the system validations will be performed so error will be
+                                                displayed..</p>
+                                        </div>
+                                        <button class="collapsible">15. What are Governor Limits?</button>
+                                        <div class="content">
+                                            <p>Since we are working in multitenant environment Salesforce is enforcing
+                                                the limits for all the functionalities.</p>
+
+                                            <p>* How many no of fields for an object: 500</p>
+                                            <p>* No of master detail relationships for an object: 2</p>
+                                            <p>* No of lookup relationship for an object: 25</p>
+                                            <p>* No of rollup summery fields: 25</p>
+                                            <p>* How many external ids we can enable for an object: 7 (increased from 3
+                                                to 7 in Winter-15)</p>
+                                        </div>
+                                        <button class="collapsible">16. For which data type we can enable external
+                                            id?</button>
+                                        <div class="content">
+                                            <p>text, number, auto number, email.</p>
+                                        </div>
+                                        <button class="collapsible">17. What is list view?</button>
+                                        <div class="content">
+                                            <p>After clicking on the tab on the top of the page we can see views, by
+                                                default we can see the value called ‘all’. If we click on ‘Go’ beside
+                                                that all we can see all the records of that object. If we want we can
+                                                create new views. While creating the view we can give the filter
+                                                conditions so that based on the filter condition only we can see the
+                                                records.</p>
+                                        </div>
+                                        <button class="collapsible">18. What is Inline editing?</button>
+                                        <div class="content">
+                                            <p>On the detail page without clicking on edit button we can edit particular
+                                                field if it is not read-only.</p>
+                                        </div>
+                                        <button class="collapsible">19. How to disable Inline editing?</button>
+                                        <div class="content">
+                                            <p>To enable or disable Inline editing follow the below navigation - Setup->
+                                                Customise-> User Interface-> Enable Inline Editing</p>
+                                        </div>
+                                        <button class="collapsible">20. What is Enhanced list view?</button>
+                                        <div class="content">
+                                            <p>In list views we can modify multiple records at a time using Enhanced
+                                                list views Note: To modify multiple records, all the records should
+                                                belong to same record type in the list view otherwise we cannot modify.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">21. What is search layout?</button>
+                                        <div class="content">
+                                            <p>Whenever we click on a tab or we click on a lookup icon or search for a
+                                                record we see only one standard field by default, to enable remaining
+                                                fields -</p>
+
+                                            <p>* To show multiple fields for the records which display under a tab, on
+                                                object detail page > under Search layouts edit tab and add required
+                                                fields.</p>
+                                            <p>* To show multiple fields for the records which display when we click on
+                                                lookup of a field, on object detail page > under Search layouts edit
+                                                Lookup Dialogs and add required fields.</p>
+                                            <p>* To show multiple fields for the records which display when we search
+                                                for the records, on object detail page > under Search layouts edit
+                                                Search Results and add required fields.</p>
+                                        </div>
+                                        <button class="collapsible">22. What is mini page layout and how to
+                                            enable?</button>
+                                        <div class="content">
+                                            <p>For lookup fields on record detail page we see a link, whenever we put
+                                                cursor on that link we see a popup window which displays few fields. To
+                                                control the fields visibility, on that look up field parent object page
+                                                layout we see a mini page layout in that we can control.</p>
+                                        </div>
+                                        <button class="collapsible">23. What is lead process?</button>
+                                        <div class="content">
+                                            <p>To control the picklist values of the status field on the lead object we
+                                                should create lead process.</p>
+
+                                            <p> * Without selecting the lead process we can't create the record type for
+                                                lead object</p>
+                                        </div>
+                                        <button class="collapsible">24. What is sales process?</button>
+                                        <div class="content">
+                                            <p>To control the picklist values of the stage field on the opportunity
+                                                object we should create sales process.</p>
+
+                                            <p> * Without selecting the sales process we can't create the record type
+                                                for opportunity object</p>
+                                        </div>
+                                        <button class="collapsible">25. What is Support process?</button>
+                                        <div class="content">
+                                            <p>To control the picklist values of the status field on the case object we
+                                                should create support process.</p>
+
+                                            <p> * Without selecting the support process we can't create the record type
+                                                for case object</p>
+                                        </div>
+                                        <button class="collapsible">26. What is web-to-lead?</button>
+                                        <div class="content">
+                                            <p>On lead object we can generate the HTML code by selecting lead fields and
+                                                by mentioning return URL from web-to-lead option. The generated HTML
+                                                code can be hosted in any of the website. Upon entering the information
+                                                in those fields and clicking on submit button that information will be
+                                                saved into lead object of the Salesforce.</p>
+                                        </div>
+                                        <button class="collapsible">27. What is Queue?</button>
+                                        <div class="content">
+                                            <p>In queue we can add group of users and we can assign the objects to the
+                                                Queue. After creating the queue one of the list view automatically
+                                                created on the objects which are selected for the queue. We can assign
+                                                this queue as the owner of the records (objects which are selected for
+                                                this queue). Later users who are part of that queue can claim the
+                                                ownership by navigating to list view corresponding to the queue. In that
+                                                list view users who are part of the queue can select the record and
+                                                click on accept button so that record ownership will be transferred from
+                                                queue to accepted person.</p>
+                                        </div>
+                                        <button class="collapsible">28. What is public group?</button>
+                                        <div class="content">
+                                            <p>We can add set of random users in the public group. We can't assign
+                                                public group as an owner of the record. In manual sharing, sharing rules
+                                                and in list views we can use public group.</p>
+                                        </div>
+                                        <button class="collapsible">29. What are the Assignment rules?</button>
+                                        <div class="content">
+                                            <p>On lead and case objects we can create the Assignment rules. Whenever any
+                                                record is submitted for lead/case if specified condition in the
+                                                Assignment rule satisfied based on that we can decide the owner of the
+                                                case/lead. Note: While submitting case/lead we should check for 'Assign
+                                                using active assignment rule' checkbox which will display under Optional
+                                                section.</p>
+                                        </div>
+                                        <button class="collapsible">30. What are Auto-Response Rules?</button>
+                                        <div class="content">
+                                            <p>On lead and case objects we can create the Auto-Response Rules. Whenever
+                                                any record is submitted for lead/case if specified condition in the
+                                                Auto-Response Rules satisfied based on that we can decide the email
+                                                format which should send as auto response.</p>
+                                        </div>
+                                        <button class="collapsible">31. What are the Escalation rules?</button>
+                                        <div class="content">
+                                            <p>On case object we can create Escalation rule. Based on the priority we
+                                                can send escalation mails.</p>
+                                        </div>
+
+
+                                        <button class="collapsible"><strong>Questions on Relationships</strong></button>
+                                        <div class="content">
+                                            <p>To avoid Data Redundency and To achieve Integrity we should go for
+                                                Relationships.</p>
+                                        </div>
+                                        <button class="collapsible">1. Is it possible to create the Master – Detail
+                                            Relationship field for the child object which is having existing
+                                            records?</button>
+                                        <div class="content">
+                                            <p>No, we cannot create directly. To create first we should create Look up
+                                                relationship then populate the field value for all the records and then
+                                                convert the look up relationship to master detail relationship.</p>
+                                        </div>
+                                        <button class="collapsible">2. Is it possible to convert Mater – Detail
+                                            Relationship to Look Up Relationship?</button>
+                                        <div class="content">
+                                            <p>If the parent object doesn’t have Roll up Summary fields for the child
+                                                object then we can convert.</p>
+                                        </div>
+                                        <button class="collapsible">3. Is it possible to delete junction – Object in
+                                            case of Mater – Detail Relationship?</button>
+                                        <div class="content">
+                                            <p>* If the parent objects don’t have Roll up Summary fields for the child
+                                                object then we can delete. <br>
+                                                * To delete a child object it should not be referred in Apex Classes and
+                                                Apex Triggers.<br>
+                                                * Later if we undelete the object, Master detail fields on the junction
+                                                objects will be converted to look up Fields.<br>
+                                                Note:<br>
+                                                * If we delete only Master – Detail Relationship field from the child
+                                                object and undelete it from the Recycle Bin then it will be converted to
+                                                look up relationship.<br>
+                                                * Parent Object we cannot delete because it will be referred in the
+                                                child object.</p>
+                                        </div>
+                                        <button class="collapsible">4. What will happen if we undelete the deleted
+                                            Junction Object?</button>
+                                        <div class="content">
+                                            <p>Master – Detail Relationship data types will be converted to look up
+                                                relationship data types.</p>
+                                        </div>
+                                        <button class="collapsible">5. What will happen to child records if we delete a
+                                            parent record in case of Lookup Relationship?</button>
+                                        <div class="content">
+                                            <p>If we delete parent object record all the child object records
+                                                relationship's field value will be get deleted. (Entire record won’t be
+                                                get deleted)</p>
+                                            <p><strong>Example:</strong><br>
+                                                Child Object: Employee (Employee object have Department field which is
+                                                related to Department Object)<br>
+                                                Parent Object: Department<br>
+                                                &nbsp;&nbsp; * Suppose N number of employee records related to IT
+                                                department, if we delete IT department all the child(Employee) records
+                                                Department field value related to IT department will be get deleted.<br>
+                                                &nbsp;&nbsp;Note:<br>
+                                                &nbsp;&nbsp;* Salesforce store deleted records only for 15 day in
+                                                Recycle bin later it will remove the records permanently.<br>
+                                                &nbsp;&nbsp;* If we undelete the IT department record from the Recycle
+                                                bin then all the related child records department field value will be
+                                                restored.</p>
+                                        </div>
+                                        <button class="collapsible">6. What will happen to child records if we delete a
+                                            parent record in case of Master Detail Relationship?</button>
+                                        <div class="content">
+                                            <p>If we delete the parent object record all the child object records will
+                                                be get deleted.</p>
+                                            <p><strong>Example:</strong><br>
+                                                Child Object: Employee (Employee object have Department field which is
+                                                related to Department Object)<br>
+                                                Master Object: Department<br>
+                                                &nbsp;&nbsp;* Suppose N number of employee records related to IT
+                                                department, if we delete IT department all the child records will get
+                                                deleted.<br>
+                                                &nbsp;&nbsp;Note:<br>
+                                                &nbsp;&nbsp;* Salesforce store deleted records only for 15 day in
+                                                Recycle bin later it will remove the records permanently.<br>
+                                                &nbsp;&nbsp;* If we undelete the IT department record from the Recycle
+                                                bin then along with IT department record all the related child
+                                                (Employee) records will be restored. (We cannot see the child object
+                                                records in the Recycle bin)</p>
+                                        </div>
+                                        <button class="collapsible">7. What is Junction Object?</button>
+                                        <div class="content">
+                                            <p>A child object which is having master detail relationships with two
+                                                different parent object is called junction object.</p>
+                                            <p><strong>Example:</strong><br>
+                                                Object1: Department<br>
+                                                Object2: Project<br>
+                                                Child Object: Employee<br>
+                                                &nbsp;&nbsp;* Field1: Department (Master Detail with Department )<br>
+                                                &nbsp;&nbsp;* Field2: Project(Master Detail with Project)<br>
+                                                Note: From the above example we can say Employee Object as Junction
+                                                Object.</p>
+                                        </div>
+                                        <button class="collapsible">8. For a junction object if we delete one of the
+                                            parent record what will happen to child records?</button>
+                                        <div class="content">
+                                            <p>Child records will be get deleted which are related to Department as well
+                                                as Project.</p>
+                                            <p>Note: If we undelete the IT department record from the Recycle bin then
+                                                along with IT department record all the related child (Employee) records
+                                                will be restored those will be reflected for Project as well. (We cannot
+                                                see the child object records in the Recycle bin)</p>
+                                        </div>
+
+
+                                        <button class="collapsible"><strong>Users, Profiles and Permission
+                                                Sets</strong></button>
+                                        <div class="content">
+                                            <p>Profiles and Permission Sets provides security for meta-data (Structure)
+                                                components.</p>
+                                        </div>
+                                        <button class="collapsible">1. Is it possible to delete the user in
+                                            salesforce?</button>
+                                        <div class="content">
+                                            <p>No, once we create an user in salesforce we cannot delete the user
+                                                record. We can only deactivate the user record.</p>
+                                        </div>
+                                        <button class="collapsible">2. What is 'Grant Account Login Access'? How to
+                                            enable 'Grant Account Login Access'</button>
+                                        <div class="content">
+                                            <p>If we enable 'Grant Account Login Access' for a user then we can see 'Log
+                                                in' button on the detail page of that user. By clicking on that 'Log in'
+                                                button without giving that user's username and password we can log in.
+                                            </p>
+                                            <p>To enable the 'Grant Account Login Access' follow the below steps :</p>
+                                            <p>1. Log in as a user to whom you want to enable Log in access. <br>
+                                                2. At top right corner click on name (Which should be left to Setup) >
+                                                My Settings<br>
+                                                3. User should be able to see user's personal set up page.<br>
+                                                4. Left side, click on Personal Information > Grant Account Login
+                                                Access<br>
+                                                5. User should be able to see Grant Account Login Access page<br>
+                                                6. In Access Duration column select '1 Year' for all the records and
+                                                click on 'Save' button.<br>
+                                                7. Log out and Log in as any other user in the organization then click
+                                                on Manage Users > Users.<br>
+                                                8. User should be able to see list of records and verify the user to
+                                                whom we enabled the Grant Account Login Access<br>
+                                                9. User should be able to see the Login link beside Edit link.<br>
+                                                10. Click on Login then user should be able to login as that user
+                                                mode<br>
+                                                11. Observe at top right corner, user should be able to see Logged in as
+                                                'Name of the user' which should be highlighte in black color.<br>
+                                                12. Click on Logout<br>
+                                                13. User should be come back to original user's mode, Observe at top
+                                                right corner, user should not be able to see Logged in as 'Name of the
+                                                user'</p>
+                                        </div>
+                                        <button class="collapsible">3. How to provide security for Meta-Data files
+                                            (Schema)?</button>
+                                        <div class="content">
+                                            <p>Using Profiles and Permission Sets.</p>
+                                        </div>
+                                        <button class="collapsible">4. What is Profile?</button>
+                                        <div class="content">
+                                            <p>* Profile deals with CRED (Create, Read, Edit and Delete) permissions
+                                                over Apps, Tabs, sObjects, Fields, Record Types, etc... <br>
+                                                * We can map only one profile for one user and without mapping the
+                                                profile we cannot create the user.</p>
+                                        </div>
+                                        <button class="collapsible">5. What is Permission Set?</button>
+                                        <div class="content">
+                                            <p>* To improve the permissions for the users over profiles we should go for
+                                                Permission Sets. <br>
+                                                * Example- To give additional permissions to few users who belongs to
+                                                different profiles over Apps, Tabs, sObjects and fields.</p>
+                                        </div>
+                                        <button class="collapsible">6. How to give permissions to two fields for
+                                            different users who belongs to different profiles?</button>
+                                        <div class="content">
+                                            <p>Permission sets.</p>
+                                        </div>
+                                        <button class="collapsible">7. How many users are there in your project
+                                            salesforce instance?</button>
+                                        <div class="content">
+                                            <p>1000 (It will depends upon the number of licenses taken by the client, it
+                                                will be like upto 4000 like that based on the client)</p>
+                                        </div>
+                                        <button class="collapsible">8. How to provide security for the
+                                            Records(Instance)?</button>
+                                        <div class="content">
+                                            <p>1. Roles <br>
+                                                2. OWD(Organigation Wide Defaults)<br>
+                                                3. Sharing Rules.<br>
+                                                4. Manual Sharing<br>
+                                                5. Apex Managed sharing<br>
+                                                6. View all.<br>
+                                                7. Modify all.<br>
+                                                8. View all data.<br>
+                                                9. Modify all data.</p>
+                                        </div>
+                                        <button class="collapsible">9. What is role?</button>
+                                        <div class="content">
+                                            <p>Role deals with authorization to access data.</p>
+                                        </div>
+                                        <button class="collapsible">10. What is OWD?</button>
+                                        <div class="content">
+                                            <p>OWD is the default access level on records for any object in sales force.
+                                                For custom objects we can see below access levels : <br>
+                                                1. Private<br>
+                                                2. Public Read only<br>
+                                                3. Public Read/Write</p>
+                                            <p>By default after creating custom object OWD access level is Public
+                                                Read/Write.</p>
+                                            <p><strong>Private:</strong> only owner and above hierarchy users can have
+                                                Read/Write access and below hierarchy users don't have any access. <br>
+                                                <strong>Public Read only:</strong> only owner and above hierarchy users
+                                                can have Read/Write access and below hierarchy users can have only Read
+                                                Only.<br>
+                                                <strong>Public Read/Write:</strong> Irrespective of role hierarchy every
+                                                one can have Read/Write permissions on the records.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">11. What is Grant Access Using Hierarchies?</button>
+                                        <div class="content">
+                                            <p>Say there are three roles <br>
+
+                                                * Role A<br>
+                                                * Role B<br>
+                                                * Role C</p>
+                                            <p>Role A is higher in hierarchy, Role B is in middle and Role C is lower in
+                                                hierarchy</p>
+                                            <p>If the Role A user through Manual Sharing or Sharing Rules, shares the
+                                                record to Role C user who is in lower hierarchy, then the Role B user
+                                                who is above in hierarchy to Role C user can see the records, if we
+                                                enable Grant Access Using Hierarchies at sharing settings else Role B
+                                                user cannot see the record.</p>
+                                        </div>
+
+                                        <button class="collapsible"><strong>Import Wizard and Data
+                                                Loader</strong></button>
+                                        <div class="content">
+                                            <p>To process bulk records.</p>
+                                        </div>
+                                        <button class="collapsible">1. What is Import wizard?</button>
+                                        <div class="content">
+                                            <p>* Import wizard is a web based tool to process bulk records. <br>
+                                                * With import wizard we can process maximum of 50,000 records.<br>
+                                                * In import wizard we can't see few objects (ex: if there is
+                                                masterdetail relationship between two objects then child object we can't
+                                                see).</p>
+                                        </div>
+                                        <button class="collapsible">2. What is Data Loader?</button>
+                                        <div class="content">
+                                            <p>Data Loader is a stand-alone tool to process bulk records. With
+                                                Dataloader we can process maximum of 5 million records. Most of the time
+                                                we use only Dataloader. Default batch size of the Dataloader is 200.</p>
+                                        </div>
+                                        <button class="collapsible">3. Which operations we can perform on
+                                            dataloader?</button>
+                                        <div class="content">
+                                            <p>1. Insert (Inserting brand new records, no need of ID) <br>
+                                                2. Update (Updating the existing records based on the record ID)<br>
+                                                3. Upsert (To Upsert we should have one external ID field on the object,
+                                                based on the external id field if the value already exists it will
+                                                update, if doesn't exist then it will insert)<br>
+                                                4. Delete (Delete the records based on the id provided, to delete we
+                                                need only id, deleted records can be found in recycle bin)<br>
+                                                5. Hard delete (Delete the records based on the id provided, to delete
+                                                we need only id, deleted records can't be found in recycle bin, Note: If
+                                                we enable bulk API in data loader settings then only we can perform Hard
+                                                delete.)<br>
+                                                6. Export (From any object we can export records based on the SOQL
+                                                query, Note: We can't export deleted records which are there in the
+                                                recycle bin)<br>
+                                                7. Export all (From any object we can export records based on the SOQL
+                                                query, Note: Using Export all we can export deleted records which are
+                                                there in the recycle bin also)</p>
+                                        </div>
+                                        <button class="collapsible">4. Data loader or Import wizard supports which file
+                                            format?</button>
+                                        <div class="content">
+                                            <p>.CSV (Comma Separated Values)</p>
+                                        </div>
+                                        <button class="collapsible">5. What is the filed mapping file format of the data
+                                            loader?</button>
+                                        <div class="content">
+                                            <p>.SDL</p>
+                                        </div>
+                                        <button class="collapsible">6. How to insert null values into
+                                            dataloader?</button>
+                                        <div class="content">
+                                            <p>In dataloader settings we should enable 'insert null values' checkbox
+                                                otherwise we can't insert null values.</p>
+                                        </div>
+                                        <button class="collapsible">7. What is external ID?</button>
+                                        <div class="content">
+                                            <p>Suppose we have account table in Salesforce and account table outside of
+                                                the Salesforce (ex: .csv file, sql database). In Salesforce all the
+                                                records can be identified with record id and outside of the Salesforce
+                                                we can't recognize records with Salesforce id that is the reason to
+                                                compare outside table and salesforce table in Salesforce for one of the
+                                                field we have to enable external ID (we can enable external id for text,
+                                                number, auto number and email). If we enable external id we can compare
+                                                that particular column with the column which is available in external
+                                                table. While comparing if the both column values are same then it will
+                                                update otherwise it will insert.</p>
+                                        </div>
+                                        <button class="collapsible">8. Maximum batch size of data loader?</button>
+                                        <div class="content">
+                                            <p>10,000 records and minimum 1 record.</p>
+                                        </div>
+                                        <button class="collapsible">9. What is default batch size if we enable bulk
+                                            API?</button>
+                                        <div class="content">
+                                            <p>2,000 records.</p>
+                                        </div>
+
+
+                                        <button class="collapsible"><strong>Reports and Dashboards</strong></button>
+                                        <div class="content">
+                                            <p>To summarize the information.</p>
+                                        </div>
+                                        <button class="collapsible">1. What is Report?</button>
+                                        <div class="content">
+                                            <p>To summarize the information of an object we use reports.</p>
+                                        </div>
+                                        <button class="collapsible">2. What are the types of Reports?</button>
+                                        <div class="content">
+                                            <p>1. Tabular (Displays records just like a table) <br>
+                                                2. Summary (we can summarize the information based on certain
+                                                fields)<br>
+                                                3. Matrix (we can summarize the information in two dimensional manner,
+                                                both rows and columns)<br>
+                                                4. Join (we can summarize information in different blocks on the same
+                                                object and the related objects)</p>
+                                        </div>
+                                        <button class="collapsible">3. How many blocks we can create for join
+                                            reports?</button>
+                                        <div class="content">
+                                            <p>5 blocks.</p>
+                                        </div>
+                                        <button class="collapsible">4. How many maximum groupings we can do for summary,
+                                            matrix and join reports?</button>
+                                        <div class="content">
+                                            <p>3 groupings</p>
+                                        </div>
+                                        <button class="collapsible">5. What is bucketing in reports?</button>
+                                        <div class="content">
+                                            <p>Bucket field in Reports is used to group values to the name we specify.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">6. How many records we can display on page for a
+                                            report?</button>
+                                        <div class="content">
+                                            <p>We can display up to 2000 records on a page. If more records are there to
+                                                display we cannot see those through user interface. If you export the
+                                                records to a excel sheet then you can export up to to 50000 records.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Apex -->
+                                    <div id="Apex" class="tabcontent">
+                                        <button class="collapsible"><strong>Apex Programming Basics</strong></button>
+                                        <div class="content">
+                                            <p>Questions on Apex Basics.</p>
+                                        </div>
+                                        <button class="collapsible">1. What are the Oop's Concepts?</button>
+                                        <div class="content">
+                                            <p>Definitions</p>
+                                            <p> Programming Elements</p>
+                                            <p> - <i> Variables</i> and <i>Methods</i> comes under Programming Elements
+                                            </p>
+                                            <p><strong>OOP's Concepts</strong></p>
+                                            <p>Encapsulation</p>
+                                            <p>Binding the PE's into a single unit.</p>
+
+                                            <p> Keywords: <i>class</i> and <i>interface</i></p>
+                                            <hr>
+                                            <p> Abstraction</p>
+                                            <p> Different levels of hiding the PE's</p>
+
+                                            <p> Keywords: <i>private,protected,public</i> and <i>global</i></p>
+                                            <hr>
+                                            <p> Polymorphism</p>
+                                            <p> Different behavior of the PE's</p>
+
+                                            <p> Keywords: <i>override</i></p>
+                                            <hr>
+                                            <p> Inheritance</p>
+                                            <p> Reusing one encapsulation from another encapsulation</p>
+
+                                            <p> Keywords: <i>extends</i> and <i>implements</i></p>
+                                            <p>Apex follows above concepts hence we call apex as a OOP's based language.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">2. What is the difference between non-static and
+                                            static?</button>
+                                        <div class="content">
+                                            <p>1. By default all the variables and methods are non-static.</p>
+                                            <p>2. Scope of the non-static variables or metods is within the scope of
+                                                the same object.</p>
+                                            <p>3. We can declare variables and methods as static by using static
+                                                keyword.</p>
+                                            <p>4. Scope of the static variables and methods is through out the
+                                                transaction.</p>
+                                            <p>5. Static variables and methods, we can directly call with class name
+                                                (we cannot access static variables and methods with object name).
+                                            </p>
+                                        </div>
+
+                                        <button class="collapsible"><strong>Collections</strong></button>
+                                        <div class="content">
+                                            <p>Questions on Collections.</p>
+                                        </div>
+                                        <button class="collapsible">1. What are the types of Collections available in
+                                            Apex?</button>
+                                        <div class="content">
+                                            <p>1. List (ordered and allow duplicates)</p>
+                                            <p>2. Set (unordered and won't allow duplicates)</p>
+                                            <p>3. Map (Key and value pair)</p>
+                                        </div>
+                                        <button class="collapsible">2. What is the difference between List and Set
+                                            ?</button>
+                                        <div class="content">
+                                            <table>
+                                                <tr>
+                                                    <th>List</th>
+                                                    <th>Set</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>List is Ordered.</td>
+                                                    <td>Set is unordered.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>List allows duplicates.</td>
+                                                    <td>Set doesn't allow duplicates.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>We can access list elements with index.</td>
+                                                    <td>Set elements cannot be accessed with index.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>We can sort list elements with sort method (default sorting
+                                                        order is
+                                                        ascending).</td>
+                                                    <td>sort method is not available for Set.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>We can process records which are stored in list using DML
+                                                        statements(insert, update, delete and undelete).</td>
+                                                    <td>Contains method is available for Set to search for a particular
+                                                        element
+                                                        in the set.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>We can process records which are stored in list using DML
+                                                        statements(insert, update, delete and undelete).</td>
+                                                    <td>We can process records which are stored in list using DML
+                                                        statements(insert, update, delete and undelete).</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="collapsible">3. What is the maximum size of the list?</button>
+                                        <div class="content">
+                                            <p>No limit for the size of a list. It only depends on the heap size which
+                                                is 6 MB (Synchronous) and 12 MB (Asynchronous).</p>
+                                        </div>
+                                        <button class="collapsible">4. What are the map methods available in
+                                            Apex?</button>
+                                        <div class="content">
+                                            <p><i>//Map holds key and value pair.</i></p>
+                                            <p><i>//Syntax: Map mapName = new Map();</i></p>
+                                            <p><i> /*Map countryISTCodeMap = new Map();</i></p>
+                                            <p><i> countryISTCodeMap.put('India','91');</i></p>
+                                            <p><i>countryISTCodeMap.put('USA','001');</i></p>
+                                            <p><i> countryISTCodeMap.put('India','911');//replaces old value with new
+                                                    value.*/</i></p>
+                                            <p><i> Map countryISTCodeMap = new Map{'India'=>'91','USA'=>'001',
+                                                    'India'=>'911'};</i></p>
+
+                                            <p><i> system.debug('countryISTCodeMap result: '+countryISTCodeMap+' with
+                                                    size '+countryISTCodeMap.size());</i></p>
+                                            <p><i> system.debug('countryISTCodeMap keys:
+                                                    '+countryISTCodeMap.keyset());</i></p>
+                                            <p><i> system.debug('countryISTCodeMap values:
+                                                    '+countryISTCodeMap.values());</i></p>
+                                            <p><i> system.debug('countryISTCodeMap search:
+                                                    '+countryISTCodeMap.containsKey('India'));</i></p>
+                                            <p><i> system.debug('countryISTCodeMap fetching value based on key:
+                                                    '+countryISTCodeMap.get('India'));</i></p>
+                                            <p><i> //map keys are case-sensitive.</i></p>
+
+                                            <p>1. <strong>keyset():</strong> To fetch only keys from the map.</p>
+                                            <p>2. <strong>values():</strong> To fetch only values from the map.</p>
+                                            <p>3. <strong>containsKey(value):</strong> To search a key from the map.</p>
+                                            <p>4. <strong>get(key):</strong> By supplying the key we can fetch the
+                                                value.</p>
+                                            <p>5. <strong>put(key,value):</strong> To add key and value in a map.</p>
+                                        </div>
+
+
+
+
+
+                                        <button class="collapsible"><strong>DML, SOQL and SOSL</strong></button>
+                                        <div class="content">
+                                            <p>Questions on DML, SOQL and SOSL.</p>
+                                        </div>
+                                        <button class="collapsible">1. What are the DML statements available in
+                                            Apex?</button>
+                                        <div class="content">
+                                            <p>1. Insert</p>
+                                            <p>2. Update</p>
+                                            <p>3. Delete</p>
+                                            <p>4. Undelete</p>
+                                            <p>5. Upsert (Combination of insert and update)</p>
+                                            <p>6. Merge (Combination of update and delete)</p>
+                                        </div>
+                                        <button class="collapsible">2. Governor Limits for DML statements ?</button>
+                                        <div class="content">
+                                            <p>1. Number of DML statements per transaction: 150 (as a whole including
+                                                insert, update, delete and undelete)</p>
+                                            <p>2. Number of rows processed per DML stmt: 10000</p>
+                                        </div>
+                                        <button class="collapsible">3. What is SOQL?</button>
+                                        <div class="content">
+                                            <p>1. SOQL: Salesforce Object Query Language</p>
+                                            <p>2. SOQL Purpose: To fetch info. from an object and related objects.</p>
+                                            <p>3. We can write query on one object while querying on those objects we
+                                                can fetch the child object info. or parent object info. (we cannot
+                                                capture un related objects info.)</p>
+                                            <p>4. SOQL queries per transaction: 100.</p>
+                                            <p>5. SOQL query rows returned: 50000.</p>
+                                        </div>
+                                        <button class="collapsible">4. What is SOSL?</button>
+                                        <div class="content">
+                                            <p>1. SOSL: Salesforce Object Search Language</p>
+                                            <p>2. SOSL Purpose:We can search for a value in multiple objects (no need of
+                                                any relationship).</p>
+                                            <p>3. Results of SOSL query can be stored in List of List.</p>
+                                            <p>4. SOSL queries per transaction: 20.</p>
+                                            <p>5. SOSL query rows returned: 2000.</p>
+                                        </div>
+                                        <button class="collapsible">5. Difference between insert/update and
+                                            Database.insert/ Database.update?</button>
+                                        <div class="content">
+                                            <table>
+                                                <tr>
+                                                    <th>insert/update</th>
+                                                    <th>Database.insert/Database.update</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Assume that you are inserting 100 records. If any one of the
+                                                        record
+                                                        fail due to error then entire operation will fail. None of the
+                                                        records
+                                                        will be saved into the database.</td>
+                                                    <td>Assume that you are inserting 100 records. If any one of the
+                                                        record
+                                                        fail
+                                                        due to error then it will perform partial operation (valid
+                                                        records will
+                                                        be inserted/updated) if we use Database.insert(list,false)/
+                                                        Database.update(list,false).</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>with insert/update if we use try-catch then we can capture only
+                                                        one
+                                                        error
+                                                        which will cause to stop the operation.</td>
+                                                    <td>with Database.insert/Database.update we can capture all the
+                                                        errors by
+                                                        saving result in Database.saveResult[].</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="collapsible">6. There is a Queue with name MyQueue. How to query
+                                            it using SOQL query from the database?</button>
+                                        <div class="content">
+                                            <p>Queues will store in Group object. To query for MyQueue from the database
+                                                using SOQL, we should use the following syntax -</p>
+                                            <p><i>Group grp = [select Id, Name from Group where Name = 'MyQueue' and
+                                                    Type = 'Queue' Limit 1];</i></p>
+                                        </div>
+
+                                        <button class="collapsible"><strong>Batch Apex</strong></button>
+                                        <div class="content">
+                                            <p>Questions on Batch Apex.</p>
+                                        </div>
+                                        <button class="collapsible">1. What is Batch Apex?</button>
+                                        <div class="content">
+                                            <p>We can call the apex code by creating object for the class (or) if the
+                                                variables or methods are static then we can call with class name.</p>
+                                            <p>Apex Code in the trigger will execute automatically for the DML
+                                                operations.</p>
+                                            <hr>
+                                            <p>If you want to execute apex code on a specific time then we should write
+                                                batch class.</p>
+                                            <p>* With Batch Apex we can process maximum of 50 million records.</p>
+                                            <p>* Batch Apex is asynchronous (execute in future context).</p>
+                                            <p>* While writing the batch class we should inherit Database.Batchable
+                                                interface.</p>
+                                            <p>* Database is a built in global class which contains inner global
+                                                interface.</p>
+                                        </div>
+                                        <button class="collapsible">2. How to schedule batch apex?</button>
+                                        <div class="content">
+                                            <p>To schedule the batch class we should write a separate class by
+                                                implementing Schedulable interface.</p>
+                                            <p>After writing the above mentioned class to schedule navigate to: Develop>
+                                                Apex Classes> Schedule Apex.</p>
+                                            <p>By clicking on Schedule Apex button we can schedule the batch class
+                                                through user interface.</p>
+                                            <p>Note: Through user interface we cannot schedule in hours/minutes.</p>
+                                            <p><strong>Schedulable Class Syntax:</strong></p>
+                                            <p><i>global class SchedulableUsage implements Schedulable {<br>
+                                                    &nbsp global void execute(SchedulableContext sc) {<br>
+                                                    &nbsp;&nbsp;BatchUsage bu = new BatchUsage();<br>
+                                                    &nbsp;&nbsp;//Database.executeBatch(bu);//Default Batch Size is:
+                                                    200.<br>
+                                                    &nbsp;&nbsp;Database.executeBatch(bu,1500);//Max. Batch Size is:
+                                                    2000.<br>
+                                                    &nbsp;&nbsp;}
+                                                    }</i></p>
+                                        </div>
+                                        <button class="collapsible">3. How to schedule batch apex in
+                                            minutes/hours?</button>
+                                        <div class="content">
+                                            <p>To schedule the batch class in minutes/hours, in the finish method we
+                                                should use System.schedule method which will take 3 parameters Job Name,
+                                                Chrone Expression and schedulable class instance name respectively.</p>
+                                            <p><i>/*** Scheduling in minutes or hours ***/ <br>
+                                                    //Create object for schedulable class<br>
+                                                    SchedulableUsage su = new SchedulableUsage();<br>
+                                                    //Preparing chron_exp<br>
+                                                    Datetime sysTime = System.now();<br>
+                                                    sysTime = sysTime.addminutes(6);<br>
+                                                    String chron_exp = '' + sysTime.second() + ' ' + sysTime.minute() +
+                                                    ' ' +<br>
+                                                    sysTime.hour() + ' ' + sysTime.day() + ' ' + sysTime.month() + ' ? '
+                                                    + sysTime.year(); <br>
+                                                    System.schedule('Dep Update'+sysTime.getTime(),chron_exp, su);</i>
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">4. How to maintain the state between the methods of
+                                            batch class?</button>
+                                        <div class="content">
+                                            <p>By default batch class is stateless (variable value which is stored in
+                                                one method cannot be remembered in another method).</p>
+                                            <p>To maintain the state for the batch class, we should inherit
+                                                Database.Stateful interface.</p>
+                                            <p><strong>Scenario:</strong> In a set list of emails are stored in execute
+                                                method. In the
+                                                finish method that set is not having any emails. What is the reason?</p>
+                                            <p><strong>Answer:</strong> By default batch class is stateless. Emails
+                                                which are added to
+                                                set can be remembered only in execute method. If we try to access the
+                                                set in finish method you won't see those emails. In finish method if you
+                                                want to access those emails of that set we should inherit the interface
+                                                called <strong>Database.Stateful.</strong></p>
+                                        </div>
+                                        <button class="collapsible">5. Is it possible to call batch class from one more
+                                            batch class?</button>
+                                        <div class="content">
+                                            <p>Yes it is possible, starting with Apex saved using Salesforce API version
+                                                26.0, you can call Database.executeBatch or System.scheduleBatch from
+                                                the finish method. This enables you to start or schedule a new batch job
+                                                when the current batch job finishes.</p>
+                                            <p>For previous versions, you can’t call Database.executeBatch or
+                                                System.scheduleBatch from any batch Apex method. Note that the version
+                                                used is the version of the running batch class that starts or schedules
+                                                another batch job. If the finish method in the running batch class calls
+                                                a method in a helper class to start the batch job, the Salesforce API
+                                                version of the helper class doesn’t matter.</p>
+                                        </div>
+                                        <button class="collapsible">6. Is it possible to call future method from a batch
+                                            class?</button>
+                                        <div class="content">
+                                            <p>We cannot call one asynchronous process from another asynchronous
+                                                process.</p>
+                                            <p>Since @future method and Batch Class both are asynchronous we cannot call
+                                                future method from batch class or we cannot call batch class from the
+                                                future method.</p>
+                                        </div>
+                                        <button class="collapsible">7. How to cover the code for a batch class?</button>
+                                        <div class="content">
+                                            <p>To cover the code for the batch class we should call the batch class from
+                                                the inside of the Test.startTest() and Test.stopTest().</p>
+                                            <p><i>Test.startTest();<br>
+                                                    //Call the batch class from here. <br>
+                                                    Test.stopTest();</i></p>
+                                        </div>
+                                        <button class="collapsible">8. How many batch jobs can be active/queued at a
+                                            time?</button>
+                                        <div class="content">
+                                            <p>Up to 5 batch jobs can be queued or active.</p>
+                                        </div>
+                                        <button class="collapsible">9. Is it possbile to write batch class and
+                                            schedulable class in a same class?</button>
+                                        <div class="content">
+                                            <p>By implementing Database.Batchable and Schedulable interfaces we can
+                                                implement the methods in a same class.</p>
+                                            <p>Though it is possible it is not recommended to write like this.</p>
+                                        </div>
+
+
+                                        <button class="collapsible"><strong>Test Classes</strong></button>
+                                        <div class="content">
+                                            <p>Questions on Test Classes.</p>
+                                        </div>
+                                        <button class="collapsible">1. What is the purpose of writing the test
+                                            class?</button>
+                                        <div class="content">
+                                            <p>After developing an apex class or apex trigger we should write the unit
+                                                tests and ensure that we are able to execute at least 75% of the lines
+                                                of code.</p>
+                                            <p>If you are moving the code from sandbox to sandbox regarding code
+                                                coverage you won't face any issue.</p>
+                                            <p>If you are moving the code from sandbox to production, you need to
+                                                include all the test classes at the time of deployment and salesforce
+                                                will run all the test classes which you included for the deployment as
+                                                well as test classes which are already present in production, if the
+                                                code coverage is less than 75% deployment will fail.</p>
+                                        </div>
+                                        <button class="collapsible">2. Is it possible to write test code inside of an
+                                            apex class or apex trigger?</button>
+                                        <div class="content">
+                                            <p>we cannot write test code (test methods) inside of the apex trigger.</p>
+                                            <p>From API Version 28.0, we cannot write the test methods inside of an apex
+                                                class which is not decorated with @isTest.</p>
+                                            <p>We can write test methods only in a class which is decorated with
+                                                @isTest.</p>
+                                            <p>Note: We have a governor limit for the overall Apex Code size of the
+                                                organization which is of 6 MB. If we decorate a class with @isTest
+                                                annotation Apex Code Size governor limit will be bypassed.</p>
+                                        </div>
+                                        <button class="collapsible">3. Syntax of testMethod?</button>
+                                        <div class="content">
+                                            <p><i>@isTest <br>
+                                                    private class MyTestClass {<br>
+
+                                                    &nbsp;&nbsp;static testMethod void myTest1() {<br>
+                                                    &nbsp;&nbsp;}<br>
+
+                                                    &nbsp;&nbsp;static testMethod void myTest2() {<br>
+                                                    &nbsp;&nbsp;}<br>
+
+                                                    }</i></p>
+                                            <p>Note: Test Class can be either public or private.</p>
+                                        </div>
+                                        <button class="collapsible">4. What is the purpose of seeAllData?</button>
+                                        <div class="content">
+                                            <p>By default test class cannot recognize the existing data in the database.
+                                            </p>
+                                            <p>if you mention @isTest(seeAllData = true) then test class can recognize
+                                                the existing data in the database.</p>
+                                            <p>See the below examples -</p>
+                                            <p>* From a List Custom Settings we cannot fetch the existing data without
+                                                seeAllData = true in test class. </p>
+                                            <p>* Suppose you have a custom object called 'CustomObject__c' and it
+                                                contains many records, we cannot fetch the existing data without
+                                                seeAllData = true in test class.</p>
+                                            <p>Note: It is not recommended to use seeAllData = true for a test class.
+                                                Based on the existing data in database code coverage will impact.</p>
+                                        </div>
+                                        <button class="collapsible">5. What is the purpose of Test.startTest() and
+                                            Test.stopTest()?</button>
+                                        <div class="content">
+                                            <p>Test.startTest() and Test.stopTest() maintains fresh set of governor
+                                                limits. Assume that you are consuming 99 SOQL queries outside of
+                                                Test.startTest() and Test.stopTest() then if you include any SOQL inside
+                                                of Test.startTest() and Test.stopTest() count will start from 1.</p>
+                                            <p>Per testMethod we can use Test.startTest() and Test.stopTest() only for
+                                                one time.</p>
+                                            <p>To execute asynchronous methods synchronously we can call those methods
+                                                from inside of Test.startTest() and Test.stopTest().</p>
+                                        </div>
+                                        <button class="collapsible">6. What is the purpose of system.runAs()?</button>
+                                        <div class="content">
+                                            <p>By default test class runs in System Mode. If you want to execute a piece
+                                                of code in a certain user context then we can use
+                                                system.runAs(UserInstance). For more details refer 2nd question in
+                                                visualforce category.</p>
+                                            <p>To avoid MIXED-DML-OPERATION error we can include DML statements inside
+                                                of system.runAs(), still the error persists keep DML statements inside
+                                                of Test.startTest() and Test.stopTest().</p>
+                                        </div>
+                                        <button class="collapsible">7. What are the assert statements?</button>
+                                        <div class="content">
+                                            <p>What is the purpose?</p>
+                                            <p>To compare Actual value and Expected value we use assert statements.</p>
+                                            <p>Types of assert statements</p>
+                                            <p>1. system.assertEquals(val1,val2): If both val1 and val2 are same then
+                                                test
+                                                class run successfully otherwise test class will fail.</p>
+                                            <p>2. system.assertNotEquals(val1,val2): If both val1 and val2 are not same
+                                                then test class run successfully otherwise test class will fail.</p>
+                                            <p>3. system.assertEquals(val1> val2): If the condition satisfied then test
+                                                class run successfully otherwise test class will fail.</p>
+                                        </div>
+                                        <button class="collapsible">8. What is the purpose of
+                                            Test.isRunningTest()?</button>
+                                        <div class="content">
+                                            <p>Sometimes we cannot satisfy certain if conditions for the apex classes,
+                                                in those situations on those if conditions we can add Test.isRunningTest
+                                                separated with or condition. Example: if(condition ||
+                                                Test.isRunningTest())</p>
+                                        </div>
+                                        <button class="collapsible">9. What is the purpose of @TestVisible?</button>
+                                        <div class="content">
+                                            <p>Sometimes in test classes we need to access a variable from Apex Class,
+                                                if it is private we cannot access for that we will replace private with
+                                                public. for this reason we are compromising the security. To avoid this
+                                                before the private variables in apex class we can include @TestVisible
+                                                so that even though variable is private we can access from the test
+                                                class.</p>
+                                        </div>
+                                        <button class="collapsible">10. What are the test class best
+                                            approaches?</button>
+                                        <div class="content">
+                                            <p>1. We should not depend on the existing data in the database. We should
+                                                create the test data for all the possible scenarios. Note: Profiles and
+                                                recordTypes cannot be created programmatically, we can query from the
+                                                database. For the remaining objects including users we should create the
+                                                test data.</p>
+                                            <p>2. While testing apex triggers and batch classes, we should do bulk
+                                                testing at least with 200 records.</p>
+                                            <p>3. We should test for all the positive and negative scenarios.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Visualforce -->
+                                    <div id="Visualforce" class="tabcontent">
+                                        <button class="collapsible"><strong>Visualforce Basics</strong></button>
+                                        <div class="content">
+                                            <p>Questions on Visualforce Basics</p>
+                                        </div>
+                                        <button class="collapsible">1. Visualforce Basics.</button>
+                                        <div class="content">
+                                            <p>Previously Visualforce Pages were not there, instead S-Controls were
+                                                there. <br>
+
+                                                S-controls have been superseded by Visualforce pages. Organizations that
+                                                haven’t previously used s-controls can’t create them. Existing
+                                                s-controls are unaffected, and can still be edited.<br>
+
+                                                S-controls: It is a combination of HTML and java script but with this to
+                                                achieve saelsforce look and feel, it is very difficult and consume lot
+                                                of tags.<br>
+
+                                                Visualforce: With visualforce we can easily achieve the salesforce look
+                                                and feel by consuming very few tags.<br>
+
+                                                Browsers (IE, Chrome, Firefox, etc...) can understand only HTML,
+                                                Visualforce will be converted to HTML before display on the browser by
+                                                salesforce.<br>
+
+                                                Visualforce page should start with the following syntax -</p>
+                                        </div>
+                                        <button class="collapsible">2. What is the difference between system mode
+                                            (system context) and user mode (user context)?</button>
+                                        <div class="content">
+                                            <p><strong>System Mode:</strong> Current logged in user permissions
+                                                (Object-level, Field-level, Record-level security) won't be considered.
+                                                Even though user doesn't has access, it will provide full permissions.
+                                            </p>
+
+                                            <p><strong>User Mode:</strong> Current logged in user permissions
+                                                (Object-level, Field-level, Record-level security) will be considered.
+                                            </p>
+                                            <p>See the following table -</p>
+                                            <table>
+                                                <tr>
+                                                    <th>Component</th>
+                                                    <th>Default Mode</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Apex Class</td>
+                                                    <td>System Mode</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Apex Trigger</td>
+                                                    <td>System Mode</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>standardController</td>
+                                                    <td>User Mode</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>controller</td>
+                                                    <td>System Mode</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Extensions (standardController)</td>
+                                                    <td>User Mode</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Extensions (controller)</td>
+                                                    <td>System Mode</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Anonymous Block</td>
+                                                    <td>User Mode</td>
+                                                </tr>
+                                            </table>
+                                            <p>Note: to apply security for Apex Class, we can use with sharing while
+                                                declaring the class. With sharing will apply only Record-level security.
+                                                It won't apply Object-level and Field-level security.</p>
+                                        </div>
+                                        <button class="collapsible">3. What are the types of controllers available for
+                                            the visualforce page?</button>
+                                        <div class="content">
+                                            <p>There are the two types of controllers -</p>
+                                            <p>1. Standard Controller <br>
+                                                2. Custom Controller</p>
+                                            <p>Note: on a visualforce page, we can use either standardController
+                                                (attribute name for Standard Controller) or controller (attribute name
+                                                for Custom Controller). We cannot refer both at a time</p>
+                                            <p><strong>StandardController :</strong></p>
+                                            <p>* We can refer any standard object or custom object in this attribute. At
+                                                a
+                                                time we can refer only one object and we cannot refer apex class in this
+                                                attribute. <br>
+                                                * standardController by default works in user mode.</p>
+                                            <p><strong>controller :</strong></p>
+                                            <p>* We can refer any apex class in this attribute. At a time we can refer
+                                                only one apex class in this attribute. <br>
+                                                * controller by default works in system mode.</p>
+                                            <p>Other supported attributes for the controllers :</p>
+                                            <p>1. extensions <br>
+                                                2. Standard List Controller<br>
+                                                3. Custom List Controller</p>
+                                            <p><strong>extensions :</strong></p>
+                                            <p>* We can refer this attribute along with standardController or controller
+                                                attribute. <br>
+                                                * In extensions attribute, we can refer multiple apex classes. We cannot
+                                                refer standard/custom objects.</p>
+                                            <p><strong>Standard List Controller :</strong></p>
+                                            <p>* There is no such attribute called standard list controller but in the
+                                                standardController page if you mention recordsetVar attribute then that
+                                                page we can call it as standard list controller page. <br>
+                                                * In recordsetVar attribute we can give any name which will hold the
+                                                list of records of the object which we mentioned for the
+                                                standardController.</p>
+                                            <p><strong>Custom List Controller :</strong></p>
+                                            <p>* There is no such attribute called custom list controller but in the
+                                                controller page if we display multiple records then that page we can
+                                                call it as custom list controller. <br>
+                                                * In controller class, we have to query the records from the database to
+                                                display the records on the page.</p>
+                                        </div>
+                                        <button class="collapsible">4. Following classes are there what will be the
+                                            priority : <br>
+                                            * controller="MainClass" <br>
+                                            * extensions="ClassA,ClassB,ClassC" <br>
+                                            click to see the question in detail.</button>
+                                        <div class="content">
+                                            <p>A method with the name save exists in all the classes mentioned above.
+                                                Which will execute first and what is the order?</p>
+                                            <hr>
+                                            <p>First of all it will give priority for the extensions, in case there are
+                                                multiple classes referred then it will give priority from left to right
+                                                after that only it will check in main controller (either
+                                                standardController or controller). <br>
+
+                                                In the above scenario, it will invoke the save method from ClassA.</p>
+                                        </div>
+                                        <button class="collapsible">5. What is View State?</button>
+                                        <div class="content">
+                                            <p>1. <strong>Creation:</strong> In a visualforce page, whenever we use form
+                                                tag then view
+                                                state will be created for the page.</p>
+                                            <p>2. <strong>Purpose:</strong> Assume that, we need to display the user
+                                                input form in 3
+                                                different visualforce pages. In first and second pages, user has to fill
+                                                the information and click on Next button. On the final page, after
+                                                filling the form if he/she will click on Save button, which ever the
+                                                information we filled in the first and second pages should be also
+                                                saved. View state will store the information which is filled in first
+                                                and second page . To maintain the state of the page, we need view state.
+                                            </p>
+                                            <p>3. <strong>Size:</strong> All the variables which we use in
+                                                controller/extensions classes
+                                                and expressions which are declared on the page will occupy the space in
+                                                view state.</p>
+                                            <p><strong>Governor Limits:</strong> Maximum size of the View State is: 135
+                                                KB. </p>
+                                            <p><strong>Page Performance:</strong> <br>
+                                                1. Whatever the variables information we don't required to maintain the
+                                                state while navigating to other pages those variables we can decorate
+                                                with transient keyword which won't occupy space in the view state. <br>
+                                                2. Static variables also won't occupy space in the view state. <br>
+                                                3. It is recommended to use only one form tag. If there are multiple
+                                                form tags hierarchy of the folder structure increases which will occupy
+                                                more space.</p>
+                                        </div>
+                                        <button class="collapsible">6. What are the Static Resources?</button>
+                                        <div class="content">
+                                            <p>To store the following kind of files and refer on the visualforce page :
+                                            </p>
+                                            <p>* images<br>
+                                                * javaScript/jQuery<br>
+                                                * CSS Style Sheets<br>
+                                                * zip files</p>
+                                            <p>Overall size of the static resources per organization: 250 MB <br>
+                                                Size of the each static resource file: 5 MB<br>
+                                                To refer the static resource on the vf page use: $Resource.FileName<br>
+                                                To refer the zipped static resource on the vf page use:
+                                                URLFOR($Resource.zipname, '/images/FileName.png')</p>
+                                        </div>
+                                        <button class="collapsible">7. What is the defference between Static Resources
+                                            and Documents?</button>
+                                        <div class="content">
+                                            <p>Please find the following differences :</p>
+                                            <table>
+                                                <tr>
+                                                    <th>Static Resources</th>
+                                                    <th>Documents</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Static Resource is cached at server side.</td>
+                                                    <td>Documents will store in database.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Static Resources can be referred with file name.</td>
+                                                    <td>Documents should be referred with url.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <button class="collapsible">8. How to display error messages on VF(Visualforce)
+                                            page?</button>
+                                        <div class="content">
+                                            <p>On VF page we should use :</p>
+                                            <p>In Apex Class, we should use : <br>
+                                                <i>ApexPages.addMessage(new
+                                                    ApexPages.Message(ApexPages.severity.Error,'Error Message'));</i>
+                                            </p>
+                                            <p>Note: For the standardController no need to include code inside of the
+                                                Apex Class.</p>
+                                            <p>Following severity levels are available : <br>
+                                                1. CONFIRM<br>
+                                                2. ERROR<br>
+                                                3. FATAL<br>
+                                                4. INFO<br>
+                                                5. WARNING</p>
+                                        </div>
+                                        <button class="collapsible">9. What is RecordSetVar?</button>
+                                        <div class="content">
+                                            <p>on a standardController page to display the multiple records we use
+                                                recordSetVar (without the support of any extensions class).</p>
+                                        </div>
+                                        <button class="collapsible">10. What is the difference between dataTable and
+                                            pageBlockTable?</button>
+                                        <div class="content">
+                                            <p>dataTable: Display the records without standard salesforce look and feel.
+                                                <br>
+                                                pageBlockTable: Display the records with standard salesforce look and
+                                                feel.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">11. Maximum number of records displayed on the VF
+                                            page?</button>
+                                        <div class="content">
+                                            <p>1000</p>
+                                        </div>
+                                        <button class="collapsible">12. How to display more records beyond the supported
+                                            limit on the VF page?</button>
+                                        <div class="content">
+                                            <p>For the page tag we can enable readOnly attribute value as true so that :
+                                            </p>
+                                            <p>* Number of query rows will increased from 50000 to 1 million rows. <br>
+                                                * Number of records displayed on VF page will be increased from 1000 to
+                                                10000</p>
+                                        </div>
+                                        <button class="collapsible">13. What is the difference between inputText and
+                                            inputField?</button>
+                                        <div class="content">
+                                            <p>inputText: Always display the field as text box irrespective of data
+                                                types (Checkbox, Picklsit, Look up). <br><br>
+
+                                                inputField: Display automatically according to the fields data types.
+                                                Note:We cannot refer primitive data types (String etc.) with inputField.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">14. What is the difference between outputText and
+                                            outputField?</button>
+                                        <div class="content">
+                                            <p>outputText: Always display the field value as text irrespective of data
+                                                types (Currency, Look up, URL etc.). <br><br>
+
+                                                outputField: Display automatically according to the fields data types.
+                                                If it is currency then it will append currency symbol while displaying
+                                                on the page. If it is look up type then it will display as a link.</p>
+                                        </div>
+                                        <button class="collapsible">15. What is pagination and what are the ways to
+                                            achieve it?</button>
+                                        <div class="content">
+                                            <p>Assume that we need to display 100 records on the page. If the
+                                                requirement is to display only 10 records at a time :</p>
+                                            <p>* <strong>First:</strong> Displays first set of 10 records. <br>
+                                                * <strong>Previous:</strong> Displays previous set of 10 records.<br>
+                                                * <strong>Next:</strong> Displays next set of 10 records.<br>
+                                                * <strong>Last:</strong> Displays last set of 10 records.</p>
+                                            <p>We can achieve the above functionality with Pagination. We can achieve
+                                                the pagination in two ways :</p>
+                                            <p>1. Using standardSetController <br>
+                                                2. Using Limit and Offset keywords in SOQL query.</p>
+                                        </div>
+                                        <button class="collapsible">16. What is Wrapper Class?</button>
+                                        <div class="content">
+                                            <p>Wrapper Class is nothing but list of instances of a certain class. Follow
+                                                the below steps to create the wrapper list :</p>
+                                            <p>1. Create an Apex Class say 'MyWrapper'(It can be inside/outside of the
+                                                controller class.) <br>
+                                                2. Declare the necessary variables in the class to store the
+                                                information.<br>
+                                                3. Create a list called 'MyWrapList' for 'MyWrapper'.<br>
+                                                4. Create multiple instances for 'MyWrapper' and store it in
+                                                'MyWrapList' list.<br>
+                                                5. Access 'MyWrapList' list from VF page.</p>
+                                            <p>In the below scenarios, we have to go for wrapper class : <br>
+
+                                                1. If you want to display checkboxes along with records so that upon
+                                                selecting checkboxes corresponding records can be processed (Updating,
+                                                Delteting, etc.).<br>
+                                                2. If you need to display records in single table by combining the
+                                                columns which belongs to multiple objects.</p>
+                                        </div>
+                                        <button class="collapsible">17. What are the custom labels?</button>
+                                        <div class="content">
+                                            <p>Custom Label is a memory location where we can store the text. <br>
+                                                Where to use?</p>
+                                            <p>we can refer in below components :
+
+                                                * Validation Rules and Formula fields
+                                                * Apex Classes and Apex Triggers
+                                                * Visualforce Pages</p>
+                                            <p>What is the advantage?</p>
+                                            <p>* Assume that you are referring a Record Type Name multiple times in an
+                                                apex class, in future if the client asked to rename the record type then
+                                                in all the palaces we need change by searching which consume good amount
+                                                of time. To avoid that if you store the Record Type Name in custom label
+                                                and refer that custom label in all the places. If you need to change the
+                                                name in future then you need to change only in that custom label. <br>
+                                                * Assume that you are displaying an error message on the visualforce
+                                                page, in future if the client asked to change the error message then it
+                                                will be a code change. For code change it requires lot of approvals from
+                                                business which consume lot of time. If you keep the error message in a
+                                                custom label and refer on the page, in future it won't be a code change,
+                                                in production directly they can replace the error message in that custom
+                                                label.</p>
+                                        </div>
+                                        <button class="collapsible">18. What are the Custom Settings?</button>
+                                        <div class="content">
+                                            <p>There are two types of custom settigns : <br>
+                                                1. List Custom Settings <br>
+                                                2. Hierarchy Custom Settings</p>
+                                            <p><strong>List custom settings :</strong> <br>
+
+                                                1. List Custom Settings are like custom objects.<br>
+                                                2. We can create the fields and we can store the records.<br>
+                                                3. List Custom Settings records will store in Application Cache
+                                                memory.<br>
+                                                4. To access List Custom Settings records no need to use SOQL query.<br>
+                                                5. Example: Based on the regions, zip codes should be retrieved. In this
+                                                case, If you store these records in a custom object every time we need
+                                                to query from the database. Instead if you store the records in List
+                                                Custom Settings, without consuming SOQL query we can capture the
+                                                information from the database.</p>
+                                            <p><strong>Hierarchy custom settings :</strong><br>
+
+                                                1. We can add users and profiles.<br>
+                                                2. After that we can check that a particular/current logged in user is
+                                                part of this custom settings.<br>
+                                                3. We can refer this in below components : <br>
+                                                &nbsp;&nbsp; 1. Validation Rules <br>
+                                                &nbsp;&nbsp; 2. Apex Classes and Apex Triggers<br>
+                                                &nbsp;&nbsp; 3. Visualforce Pages</p>
+                                        </div>
+                                        <button class="collapsible">19. What is the difference between List Custom
+                                            Settings and Custom Object?</button>
+                                        <div class="content">
+                                            <p>Please find the below differences ;</p>
+                                            <p>
+                                            <table>
+                                                <tr>
+                                                    <th>List Custom Settings</th>
+                                                    <th>Custom Objects</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Stores data in Application Cache memory.</td>
+                                                    <td>Stores data in database.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>No need to use SOQL query to fetch the records.</td>
+                                                    <td>We need to use SOQL query to fetch the records from the
+                                                        database.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Limited data types are available when compared to Custom Object.
+                                                    </td>
+                                                    <td>All the data types will be available.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>We cannot create validation rules and apex triggers on List
+                                                        Custom Settings.</td>
+                                                    <td>We can create.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>We cannot create tab for List Custom Settings.</td>
+                                                    <td>We can create.</td>
+                                                </tr>
+                                            </table>
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">20. What is the difference between rendered,
+                                            rerender, renderAs and contentType?</button>
+                                        <div class="content">
+                                            <p><strong>rendered:</strong> Accepts true or false. If it is true then
+                                                component will display on the page, if it is false then it won't display
+                                                on the page. <br>
+
+                                                <strong>rerender:</strong> To refresh certain area of a page based on
+                                                component id.<br>
+
+                                                <strong>renderAs:</strong> Used in page tag, We can display VF page in
+                                                PDF format if we give renderAs = "PDF".<br>
+
+                                                <strong>contentType:</strong> Used in page tag, we can download VF page
+                                                in MS Word/Excel etc. based on the input to contentType.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">21. What is button overriding?</button>
+                                        <div class="content">
+                                            <p>We can override few standard buttons with visualforce pages. <br>
+
+                                                To override standard button with visualforce page, VF page should be of
+                                                standardController to an object which is related to standard button.
+                                                <br>
+
+                                                Custom buttons we can override with URL, javaScript or Visualforce.
+                                            </p>
+                                        </div>
+                                        <button class="collapsible">22. What are the inline visualforce pages?</button>
+                                        <div class="content">
+                                            <p>On a record detail page we can embed visualforce pages. <br>
+
+                                                Assume that you are displaying inline VF page on Account record detail
+                                                page. VF page should be standardCotnroller to Account Object. <br>
+
+                                                Note: We cannot embed VF page inside of the Edit page.</p>
+                                        </div>
+                                        <button class="collapsible">23. What is the use of immediate attribute?</button>
+                                        <div class="content">
+                                            <p>Whenever we click on Back or Cancel button on a VF page if there are
+                                                mandatory fields then we will see the error messages saying to populate
+                                                those field values.</p>
+
+                                            <p> To bypass validations upon clicking on a button/link, we can use
+                                                immediate attribute.</p>
+                                        </div>
+                                        <button class="collapsible">24. What are the parameters and how many ways we can
+                                            pass the parameters?</button>
+                                        <div class="content">
+                                            <p>Parameters Example: /apex/SamplePage?param1=val1&param2=val2 <br>
+                                                1. ?param1=val1 : parameters should start with ? symbol. <br>
+                                                2. &param2=val2 : To add multiple parameters, each parameter should be
+                                                separated with & symbol.</p>
+                                            <p>Ways of passing parameters : <br>
+
+                                                1. From a VF Page: Whenever we click on commandButtton or commandLink or
+                                                outputLink, we can pass parameters with param tag. See the below example
+                                                : <br>
+                                                <i>click</i>
+                                            </p>
+                                            <p>2. From pageReference: Upon calling an action method while returning
+                                                pageReference we can append parameters. See the below example -
+                                                <i>PageReference nextpage = new PageReference('/apex/SamplePage');
+                                                    nextpage.getParameters().put('param1','val1');
+                                                    nextpage.getParameters().put('param2','val2');</i>
+                                            </p>
+                                            <p>3. Assume that there are three VF pages which are using the same Apex
+                                                Class.
+                                                In this case no need to pass the parameters from one page to other to
+                                                hold the information.</p>
+                                            <p>4. Assume that there are three VF pages which are using three different
+                                                Apex Classes. In this case to hold information from one page to other,
+                                                we should pass teh parameters.
+                                                Click here for the reference.</p>
+                                        </div>
+                                        <button class="collapsible">25. What is retURL and saveURL?</button>
+                                        <div class="content">
+                                            <p>We cannot override Save button. When you are on record edit page upon
+                                                clicking on Save button if you want to navigate it to a specific url
+                                                then we need to append saveURL=someURL parameter to the URL. You will
+                                                come to this edit page if you click on 'New' or 'Edit' button which can
+                                                be overriden with VF page, from this page you can pass saveURL parameter
+                                                to edit page.</p>
+
+                                            <p>When you are on record edit page upon clicking on Cancel button if you
+                                                want to navigate it to a specific url then we need to append
+                                                retURL=someURL parameter to the URL.</p>
+                                        </div>
+                                        <button class="collapsible">26. What are the Visualforce Components?</button>
+                                        <div class="content">
+                                            <p>Like VF page we can create visualforce component. Syntax - <br>
+
+                                                <i>Your code here.</i>
+                                            </p>
+
+                                            <p>We can use only controller and extensions attribute for the VF component.
+                                                standardController cannot be used.</p>
+                                            <p>When to use VF Component?</p>
+                                            <p>1. If you want to reuse the VF page logic. <br>
+                                                2. If the VF page logic is huge and if you want to split into different
+                                                pieces.</p>
+                                        </div>
+                                        <button class="collapsible">27. What is the order of execution of VF
+                                            page?</button>
+                                        <div class="content">
+                                            <p>We can request VF page in two ways :</p>
+
+                                            <p>1. Get Request: Whenever we click on a link or button or directly hitting
+                                                the url in address bar we can open a VF page. <br>
+
+                                                Get Request Order</p>
+                                            <p>2. Postback Request: On a VF page after populating fields if you click on
+                                                save button certain action will invoke it is nothing but postback
+                                                request.
+
+                                                Postback Request Order</p>
+                                        </div>
+                                        <button class="collapsible">28. What are the types of Ajax Functions in VF page
+                                            and what is the usage?</button>
+                                        <div class="content">
+                                            <p><strong>Ajax Functions</strong></p>
+                                            <p><a href="#">actionSupport</a></p>
+                                            <p><a href="#">actionStatus</a></p>
+                                            <p><a href="#">actionFunction</a></p>
+                                            <p><a href="#">actionPollar</a></p>
+                                            <p><a href="#">actionRegion</a></p>
+                                        </div>
+                                        <!-- <button class="collapsible">29. There is a custom object name obj with list of
+                                            records. Design a visual force page to have following output - <br>
+                                            Sl.no. A B C<br>
+                                            1. Ramya 2010 HCl<br>
+                                            2. Divya 2011 CTS<br>
+                                            3. Priya 2009 TCS<br>
+                                            A, B, C are fields and sl.no. is not a field</button>
+                                        <div class="content">
+                                            <p>
+                                                    <apex:page standardController="obj__c" recordSetVar="records">
+                                                        <apex:form>
+                                                            <apex:pageblock title="Records">
+                                                                <apex:variable var="count" value="{!1}" />
+                                                                <apex:pageblockTable value="{!records}" var="rec">
+                                                                    <apex:column headerValue="S.No">
+                                                                        {!count}
+                                                                        <apex:variable value="{!count+1}" var="count" />
+                                                                    </apex:column>
+                                                                    <apex:column value="{!rec.A__c}" />
+                                                                    <apex:column value="{!rec.B__c}" />
+                                                                    <apex:column value="{!rec.C__c}" />
+                                                                </apex:pageblockTable>
+                                                            </apex:pageblock>
+                                                        </apex:form>
+                                                    </apex:page>
+                                                </p>
+                                        </div> -->
+                                    </div>
+
+                                    <!-- Scenarios -->
+                                    <div id="Scenarios" class="tabcontent">
+                                        <button class="collapsible"><strong>Apex Triggers</strong></button>
+                                        <div class="content">
+                                            <p>Scenarios on Apex Triggers.</p>
+                                        </div>
+                                        <button class="collapsible">1. Scenario: Child__c and Parent__c are the two
+                                            custom objects and the relationship between them is Look-up relationship.
+                                            click here to see the full question.</button>
+                                        <div class="content">
+                                            <p>Child__c has a look-up relationship with the object Parent__c. In case of
+                                                look-up relationship, if we delete the parent objects records then in
+                                                child object only that look-up value will be removed. Here the
+                                                requirement is whenever user delete the parent records then all the
+                                                related child records should be deleted (entire record).</p>
+                                            <hr>
+                                            <p>Solution: </p>
+                                            <p><strong>pop-uptext</strong></p>
+                                            <p><i>/* Description:</i></p>
+                                            <p><i>* ============</i></p>
+                                            <p><i>* Apex Trigger to delete the related child object records upon</i></p>
+                                            <p><i>* deleting the parent object record in case of look up</i></p>
+                                            <p><i>* relationship *</i></p>
+                                            <p><i>* Author:</i></p>
+                                            <p><i>* ========</i></p>
+                                            <p><i>* www.srinusfdc.com</i></p>
+                                            <p><i>*/</i></p>
+                                            <p><i>trigger ParentTrigger on Parent__c (before delete) {</i></p>
+                                            <p><i>/*Assume that parent__c is a field api name( look up to parent
+                                                    object)</i></p>
+                                            <p><i>in child object.*/</i></p>
+                                            <p><i>delete [select id from Child__c where parent__c in: trigger.old];</i>
+                                            </p>
+                                            <p><i>/*Note: trigger.old will be automatically converted to set of ids</i>
+                                            </p>
+                                            <p><i>by salesforce (alternative: trigger.oldMap.keyset()).*/</i></p>
+                                            <p><i>}</i></p>
+                                        </div>
+                                        <button class="collapsible">2. Two objects Parent__c and Child__c are there.
+                                            Child__c has look up to Parent__c. click here to see the full question
+                                            ?</button>
+                                        <div class="content">
+                                            <p>Child__c has two fields Amount and quantitiy. In parent display total
+                                                amount and total quantity of all the related child records.
+                                            </p>
+                                            <p>Solution:</p>
+                                            <p><strong>Prerequisite</strong></p>
+                                            <p> Please follow the below steps to proceed with this example.</p>
+                                            <table>
+                                                <tr>
+                                                    <th>S.No</th>
+                                                    <th>Component</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>.</td>
+                                                    <td>Follow the order as mentioned below to create the components
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>.</td>
+                                                    <td>Configuration</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1.</td>
+                                                    <td>Create New App <br>
+                                                        Singular Label: Parent<br>
+                                                        Plural Label: Parents<br>
+                                                        Object Name: Parent
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2.</td>
+                                                    <td>Create New Custom Object <br>
+                                                        Singular Label: Parent<br>
+                                                        Plural Label: Parents<br>
+                                                        Object Name: Parent<br><br>
+                                                        Standard Field:<br>
+                                                        Field Label Parent No:<br>
+                                                        Data Type: Auto Number<br>
+                                                        Display Format: P-{00000}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.</td>
+                                                    <td>Create New Custom Object <br>
+                                                        Singular Label: Child<br>
+                                                        Plural Label: Childs<br>
+                                                        Object Name: Child<br><br>
+
+                                                        Standard Field:<br>
+                                                        Field Label Child No:<br>
+                                                        Data Type: Auto Number<br>
+                                                        Display Format: C-{00000}
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="social-share border-top mt-5 py-4 d-flex flex-wrap align-items-center">
+                                    <div class="tags-block me-auto">
+                                        <a href="#" class="tags-block-link">
+                                            Salesforce
+                                        </a>
+
+                                        <a href="#" class="tags-block-link">
+                                            Salesforce Interview Questions
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <a href="#" class="social-icon-link bi-facebook"></a>
+
+                                        <a href="#" class="social-icon-link bi-twitter"></a>
+
+                                        <a href="#" class="social-icon-link bi-printer"></a>
+
+                                        <a href="#" class="social-icon-link bi-envelope"></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-12 mx-auto mt-4 mt-lg-0">
+                        <form class="custom-form search-form" action="#" method="post" role="form">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+
+                            <button type="submit" class="form-control">
+                                <i class="bi-search"></i>
+                            </button>
+                        </form>
+
+                        <h5 class="mt-5 mb-3">Recent Blog</h5>
+
+                        <div class="news-block news-block-two-col d-flex mt-4">
+                            <div class="news-block-two-col-image-wrap">
+                                <a href="../Data Science/DSInterviewQues.html">
+                                    <img src="../../images/DSimg/DSInterView.jpg" class="news-image img-fluid" alt="">
+                                </a>
+                            </div>
+
+                            <div class="news-block-two-col-info">
+                                <div class="news-block-title mb-2">
+                                    <h6><a href="../Data Science/DSInterviewQues.html"
+                                            class="news-block-title-link">Data Science Interview Questions</a>
+                                    </h6>
+                                </div>
+
+                                <div class="news-block-date">
+                                    <p>
+                                        <i class="bi-calendar4 custom-icon me-1"></i>
+                                        Feb 27, 2023
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="category-block d-flex flex-column">
+                            <h5 class="mb-3">Categories</h5>
+
+                            <a href="#" class="category-block-link">
+                                Data Science
+                                <span class="badge">30</span>
+                            </a>
+
+                            <a href="#" class="category-block-link">
+                                Salesforce
+                                <span class="badge">30</span>
+                            </a>
+
+                            <a href="#" class="category-block-link">
+                                Data Mining
+                                <span class="badge">20</span>
+                            </a>
+
+                        </div>
+
+                        <div class="tags-block">
+                            <h5 class="mb-3">Tags</h5>
+
+                            <a href="#" class="tags-block-link">
+                                Salesforce
+                            </a>
+
+                            <a href="#" class="tags-block-link">
+                                Salesforce Interview Questions
+                            </a>
+
+                            <a href="#" class="tags-block-link">
+                                Salesforce Questions
+                            </a>
+
+                        </div>
+
+                        <form class="custom-form subscribe-form" action="#" method="post" role="form">
+                            <h5 class="mb-4">Newsletter Form</h5>
+
+                            <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
+                                class="form-control" placeholder="Email Address" required>
+
+                            <div class="col-lg-12 col-12">
+                                <button type="submit" class="form-control">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4">
+                    <!-- <img src="images/logo.png" class="logo img-fluid" alt=""> -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="../../index.html" class="footer-menu-link">About Us</a>
+                        </li>
+
+                        <li class="footer-menu-item"><a href="../../services.html" class="footer-menu-link">Services</a>
+                        </li>
+
+                        <li class="footer-menu-item"><a href="../../blogs.html" class="footer-menu-link">Blogs</a></li>
+
+                        <li class="footer-menu-item"><a href="../../contact.html" class="footer-menu-link">Become a
+                                volunteer</a></li>
+
+                        <li class="footer-menu-item"><a href="../../contact.html" class="footer-menu-link">Partner with
+                                us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+
+                        <a href="tel: +1 8047046284" class="site-footer-link">
+                            +1 8047046284
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:hr@na-win.io" class="site-footer-link">
+                            hr@na-win.io
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        4870 Sadler Road #300 Glen Allen, VA 23060
+                    </p>
+
+                    <!-- <a href="#" class="custom-btn btn mt-3">Get Direction</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2025 <a href="#">NA WIN</a> TECH LLC.</p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-linkedin"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.sticky.js"></script>
+    <script src="../../js/click-scroll.js"></script>
+    <script src="../../js/counter.js"></script>
+    <script src="../../js/custom.js"></script>
+    <script src="../../js/interview.js"></script>
+
+</body>
+
+</html>
